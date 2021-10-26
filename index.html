@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="http://fonts.cdnfonts.com/css/urw-geometric" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>БОК О БОК</title>
+</head>
+<body>
+<!--  Header  -->
+<header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logo.png" alt="logo"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0 absolute" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto d-flex justify-content-end mb-2 mb-lg-0">
+                        <li class="mx-sm-0 mx-lg-4">
+                            <a href="#" class="header__link">Преимущества</a>
+                        </li>
+                        <li class="mx-sm-0 mx-lg-4">
+                            <a href="#" class="header__link">Шаги продвижения</a>
+                        </li>
+                        <li class="mx-sm-0 mx-lg-4">
+                            <a href="#" class="header__link">Цена</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <!--  Hero  -->
+    <section class="hero" data-aos="fade-in" data-aos-duration="1500">
+        <div class="container">
+            <div class="hero__body">
+                <h1 class="hero__title text-center text-lg-start mx-auto mx-lg-0">
+                    Станьте <span class="note">ближе</span> к своим <br/>
+                    клиентам
+                </h1>
+                <p class="hero__text text-center text-lg-start mx-auto mx-lg-0">
+                    Мы помогаем бизнесу получать лояльных клиентов и увеличивать объемы продаж
+                </p>
+                <div class="hero__button">
+                    <button>Разместить информацию о компании</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Benefits  -->
+    <section class="benefits" data-aos="fade-in" data-aos-duration="1500">
+        <div class="container">
+            <h2 class="benefits__title text-center">
+                Что дает профиль компании на платформе <span class="note">БОК о БОК</span> <br/> владельцам бизнеса?
+            </h2>
+            <div class="benefits__body d-flex justify-content-between flex-wrap">
+                <div class="benefits__card my-3 my-lg-0 col-12 col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="200">
+                    <div class="card__icon">
+                        <img src="./assets/benefits/icon-1.png" alt="icon"/>
+                    </div>
+                    <p class="card__text">
+                        Повышение рейтинга компании среди конкурентов в онлайне
+                    </p>
+                </div>
+                <div class="benefits__card my-3 my-lg-0 col-12 col-md-6 col-lg-3" data-aos="zoom-in"  data-aos-delay="200">
+                    <div class="card__icon">
+                        <img src="./assets/benefits/icon-2.png" alt="icon"/>
+                    </div>
+                    <p class="card__text">
+                        Оптимизацию работы с лидерами мнений и негативными отзывами
+                    </p>
+                </div>
+                <div class="benefits__card my-3 my-lg-0 col-12 col-md-6 col-lg-3" data-aos="zoom-out"  data-aos-delay="200">
+                    <div class="card__icon">
+                        <img src="./assets/benefits/icon-3.png" alt="icon"/>
+                    </div>
+                    <p class="card__text">
+                        Увеличение уровня доверия среди реальных и потенциальных клиентов
+                    </p>
+                </div>
+                <div class="benefits__card my-3 my-lg-0 col-12 col-md-6 col-lg-3" data-aos="zoom-in"  data-aos-delay="200">
+                    <div class="card__icon">
+                        <img src="./assets/benefits/icon-4.png" alt="icon"/>
+                    </div>
+                    <p class="card__text">
+                        Расширение рынка сбыта продукции или зоны предоставления услуг
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  Info  -->
+    <section class="info" data-aos="fade-right">
+        <div class="info__body d-flex justify-content-around align-items-end">
+            <div class="info__img d-none d-xl-block" >
+                <img src="./assets/info/human.png" alt="human"/>
+                <img src="./assets/info/steps.png" alt="steps"/>
+            </div>
+            <h2 class="info__title" data-aos="fade-left" data-aos-delay="500">
+                <span class="note">БОК о БОК</span> — удобный трамплин для роста вашего бизнеса
+            </h2>
+        </div>
+    </section>
+
+    <!--  Steps  -->
+    <section class="steps" data-aos="zoom-in">
+        <div class="container">
+            <div class="steps__body">
+                <h2 class="steps__title text-center">
+                    3 шага для последовательного продвижения
+                </h2>
+                <ul class="steps__list">
+                    <li class="steps__item d-flex align-items-center" data-aos="fade-up-right">
+                        <div class="item__number d-flex flex-column">
+                            <span class="note d-block" data-aos="fade-up-right">01</span>
+                            <span class="vl d-block" data-aos="fade-up-right" data-aos-delay="200"></span>
+                        </div>
+                        <div class="item__content d-flex flex-column" data-aos="fade-up-right" data-aos-delay="500">
+                            <h3 class="item__title mb-3">
+                                Создайте профиль компании
+                            </h3>
+                            <p class="item__text">
+                                Функционал платформы позволяет не только подробно рассказывать о своем торговом
+                                предложении, но и обрабатывать запросы потенциальных клиентов. Создание профиля
+                                абсолютно бесплатно и не требует больших временных затрат
+                            </p>
+                        </div>
+                    </li>
+                    <li class="steps__item d-flex align-items-center" >
+                        <div class="item__number d-flex flex-column">
+                            <span class="note d-block" data-aos="fade-up-right">02</span>
+                            <span class="vl d-block" data-aos="fade-up-right" data-aos-delay="200"></span>
+                        </div>
+                        <div class="item__content" data-aos="fade-up-right" data-aos-delay="500">
+                            <h3 class="item__title mb-3">
+                                Работайте с мнениями аудитории
+                            </h3>
+                            <p class="item__text">
+                                Так как ресурс БОК о БОК аккумулирует отзывы о любом потребительском опыте в одном
+                                месте, у вас есть уникальная возможность работать с мнением своей аудитории, не выходя
+                                за пределы площадки
+                            </p>
+                        </div>
+                    </li>
+                    <li class="steps__item d-flex align-items-center" data-aos="fade-up-right">
+                        <div class="item__number d-flex flex-column">
+                            <span class="note" data-aos="fade-up-right">03</span>
+                            <span class="vl invisible" data-aos="fade-up-right" data-aos-delay="200"></span>
+                        </div>
+                        <div class="item__content" data-aos="fade-up-right" data-aos-delay="500">
+                            <h3 class="item__title mb-3">
+                                Используйте преимущество рекламы
+                            </h3>
+                            <p class="item__text">
+                                Каждый день ресурс БОК о БОК собирает множество пользователей, которые хотят узнать
+                                больше о том или ином продукте. Распространение информации о себе в такой среде помогает
+                                бизнесу быстро привлекать новых клиентов
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="steps__button">
+                    <button id="create-profile">
+                        Создать профиль компании
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Reputation  -->
+    <section class="reputation" data-aos="zoom-out-down">
+        <div class="container">
+            <div class="reputation__top">
+                <h2 class="reputation__title text-center m-0">
+                    Управляйте репутацией своего бизнеса
+                </h2>
+                <span class="h-line"></span>
+                <p class="reputation__text text-center">
+                    Отзывы и мнения о товарах или услугах напрямую влияют на эффективность бизнеса, поэтому качественное
+                    позиционирование и формирование нужного мнения целевой аудитории — это то, ради чего была создана
+                    данная платформа
+                </p>
+            </div>
+            <div class="reputation__bottom">
+                <div class="reputation__body d-flex justify-content-between flex-wrap">
+                    <div class="col col-12 col-xl-4 p-3" data-aos="fade" data-aos-duration="750">
+                        <div class="reputation__card card ">
+                            <div class="card__icon">
+                                <img src="./assets/reputation/rating.png" alt="icon"/>
+                            </div>
+                            <h3 class="card__title">
+                                Инициирование обратной связи с клиентом
+                            </h3>
+                            <p class="card__text">
+                                Любой пользователь, оставляя мнение о товаре или сервисе, рассчитывает на ту или иную
+                                реакцию компании. Грамотная работа с отзывами позволяет улучшить потребительский опыт
+                                клиента и, как следствие, повысить уровень доверия бизнесу
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-xl-4 p-3" data-aos="fade" data-aos-duration="750" data-aos-delay="400">
+                        <div class="reputation__card card ">
+                            <div class="card__icon">
+                                <img src="./assets/reputation/good-review.png" alt="icon"/>
+                            </div>
+                            <h3 class="card__title">
+                                Актуализация пользовательского опыта
+                            </h3>
+                            <p class="card__text">
+                                Партнерский аккаунт в рамках платформы дает не только возможность общаться со своими
+                                клиентами напрямую, но и модерировать поступающие отзывы. Данная опция сокращает поток
+                                необоснованного недовольства клиентов и акцентирует внимание аудитории на положительном
+                                опыте реальных пользователей
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-xl-4 p-3" data-aos="fade" data-aos-duration="750" data-aos-delay="800">
+                        <div class="reputation__card card ">
+                            <div class="card__icon">
+                                <img src="./assets/reputation/megaphone.png" alt="icon"/>
+                            </div>
+                            <h3 class="card__title">
+                                Продвижение бренда внутри платформы
+                            </h3>
+                            <p class="card__text">
+                                Внутренняя реклама позволяет владельцем бизнеса находить новых клиентов и партнеров
+                                непосредственно на самой платформе. Показы происходят не только на страницах со схожей
+                                тематикой, но и захватывают смежные отрасли
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Marketing  -->
+    <section class="marketing" data-aos="zoom-out">
+        <div class="container">
+            <div class="marketing__top">
+                <h2 class="marketing__title text-center">
+                    Продвижение бизнеса онлайн
+                </h2>
+                <span class="h-line"></span>
+                <p class="marketing__text text-center">
+                    БОК о БОК — это специализированная платформа для <br/>
+                    продвижения в сети и работы с отзывами клиентов
+                </p>
+            </div>
+            <div class="marketing__body">
+                <div class="marketing__block d-flex justify-content-center justify-content-lg-between align-items-center col-lg-12 flex-wrap" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="marketing__img col-lg-6 col-12 d-flex justify-content-center justify-content-lg-start">
+                        <img src="./assets/marketing/illustration-1.png" alt="illustration"/>
+                    </div>
+                    <div class="marketing__description d-flex flex-column col-lg-6 col-12">
+                        <h3 class="description__title mb-3">
+                            Готовая SEO-оптимизация профиля
+                        </h3>
+                        <p class="description__text">
+                            Страницы компаний на www.bokobok.com создаются с учетом важных факторов ранжирования
+                            поисковых систем Google и Яндекс, что позволяет занимать высокие позиции в поиске и
+                            привлекать потенциальных клиентов
+                        </p>
+                    </div>
+                </div>
+                <div class="marketing__block d-flex justify-content-center justify-content-lg-between align-items-center col-lg-12 flex-wrap" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="marketing__img col-lg-6 col-12 order-sm-1 order-lg-2 d-flex justify-content-center justify-content-lg-end">
+                        <img src="./assets/marketing/illustration-2.png" alt="illustration"/>
+                    </div>
+                    <div class="marketing__description d-flex flex-column order-sm-2 order-lg-1 col-lg-6 col-12">
+                        <h3 class="description__title mb-3">
+                            Удобные инструменты для маркетинга
+                        </h3>
+                        <p class="description__text">
+                            Кабинет владельца бизнеса располагает удобным инструментарием для позиционирования в сети,
+                            отслеживания базовых и уникальных метрик поведения аудитории, а также все необходимое для
+                            запуска рекламных кампаний, включая email-рассылку
+                        </p>
+                    </div>
+                </div>
+                <div class="marketing__block d-flex justify-content-center justify-content-lg-between align-items-center col-lg-12 flex-wrap" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="marketing__img col-lg-6 col-12 d-flex justify-content-center justify-content-lg-start">
+                        <img src="./assets/marketing/illustration-3.png" alt="illustration"/>
+                    </div>
+                    <div class="marketing__description d-flex flex-column col-lg-6 col-12">
+                        <h3 class="description__title mb-3">
+                            Участие в партнерских программах
+                        </h3>
+                        <p class="description__text">
+                            Подключение к партнерской программе предполагает дополнительный канал для продвижения
+                            бизнеса, ведь тогда владелец компании может запускать рекламный контент не только в рамках
+                            ресурса БОК о БОК, но и на специализированных партнерских площадках
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Package  -->
+    <section class="package" data-aos="zoom-out-up">
+        <div class="container">
+            <div class="package__top">
+                <h2 class="package__title text-center m-0">
+                    Выберите тарифный план для эффективного <br/>
+                    продвижения в сети
+                </h2>
+                <span class="h-line"></span>
+                <p class="package__text text-center">
+                    Набор маркетинговых бизнес-инструментов позволит настроить <br/>
+                    оптимальную стратегию раскрутки компании внутри платформы
+                </p>
+            </div>
+            <div class="package__body">
+                <div class="package__cards d-flex justify-content-between flex-wrap">
+                    <div class="col p-4 col-12 col-lg-6" data-aos="zoom-out" data-aos-duration="500">
+                        <div class="card p-2 p-lg-5">
+                            <h2 class="card__title text-center">
+                                Базовый
+                            </h2>
+                            <div class="rate text-center">
+                                <p>
+                                    <span class="note">$0</span>/месяц<sup>*</sup>
+                                </p>
+                            </div>
+                            <span class="h-line w-md-100"></span>
+                            <ul class="card__list">
+                                <li class="card__item card__item--available">
+                                    <span><i class="fas fa-check"></i></span> Размещение информации о бизнесе
+                                </li>
+                                <li class="card__item">
+                                    <span><i class="fas fa-times"></i></span> Коммуникация от лица компании
+                                </li>
+                                <li class="card__item">
+                                    <span><i class="fas fa-times"></i></span> Модерация клиентских отзывов
+                                </li>
+                                <li class="card__item">
+                                    <span><i class="fas fa-times"></i></span> Рекламное продвижение
+                                </li>
+                                <li class="card__item">
+                                    <span><i class="fas fa-times"></i></span> Круглосуточная техподдержка
+                                </li>
+                            </ul>
+                            <button class="plug d-block">Подключить</button>
+                        </div>
+                    </div>
+                    <div class="col p-4 col-12 col-lg-6" data-aos="zoom-out" data-aos-duration="500" data-aos-delay="500">
+                        <div class="card p-2 p-lg-5">
+                            <h2 class="card__title text-center">
+                                Партнерский
+                            </h2>
+                            <div class="rate text-center">
+                                <p>
+                                    <span class="note">$50</span>/месяц<sup>*</sup>
+                                </p>
+                            </div>
+                            <span class="h-line"></span>
+                            <ul class="card__list">
+                                <li class="card__item card__item--available">
+                                    <span><i class="fas fa-check"></i></span> Размещение информации о бизнесе
+                                </li>
+                                <li class="card__item card__item--available">
+                                    <span><i class="fas fa-check"></i></span> Коммуникация от лица компании
+                                </li>
+                                <li class="card__item card__item--available">
+                                    <span><i class="fas fa-check"></i></span> Модерация клиентских отзывов
+                                </li>
+                                <li class="card__item card__item--available">
+                                    <span><i class="fas fa-check"></i></span> Рекламное продвижение
+                                </li>
+                                <li class="card__item card__item--available">
+                                    <span><i class="fas fa-check"></i></span> Круглосуточная техподдержка
+                                </li>
+                            </ul>
+                            <button class="plug">Подключить</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="package__text"><sup>*</sup>Тарифный план можно изменить в любое время</p>
+            </div>
+        </div>
+    </section>
+
+    <!--  Feedback  -->
+    <section class="feedback" data-aos="zoom-out">
+        <h2 class="feedback__title text-center">
+            Задайте нам вопрос о размещении компании в <br/>
+            каталоге
+        </h2>
+        <div class="feedback__body d-flex justify-content-center justify-content-xl-between">
+            <div class="feedback__img d-none d-xl-block" data-aos="fade-right" data-aos-duration="500">
+                <img src="./assets/feedback/image.png" alt="feedback"/>
+            </div>
+            <div class="feedback__form"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
+                <form action="#" method="GET">
+                    <label class="d-flex flex-column">
+                        Ваше имя
+                        <input type="text" placeholder="Введите ваше имя"/>
+                    </label>
+                    <label class="d-flex flex-column">
+                        Ваш Telegram
+                        <input type="text" placeholder="@nickname"/>
+                    </label>
+                    <label class="d-flex flex-column">
+                        Ваша электронная почта
+                        <input type="text" placeholder="you@domain.com"/>
+                    </label>
+                    <label class="d-flex flex-column">
+                        Ваш вопрос
+                        <input type="text" placeholder="Сформулируйте ваш вопрос"/>
+                    </label>
+                    <button type="submit">Отправить</button>
+                    <p class="form__text">
+                        Нажатием на кнопку вы даете согласие на <br/>
+                        <span class="note">обработку персональных данных</span>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--  Footer  -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="row top__block d-flex justify-content-between align-items-center">
+                <a href="#" class="footer__logo col-12 col-lg-3 d-flex justify-content-center justify-content-lg-between">
+                    <img src="./assets/logo.png" alt="logo"/>
+                </a>
+                <nav class="footer__nav d-flex col-12 col-lg-9 flex-column flex-lg-row">
+                    <ul class="footer__list m-0 col-12 col-lg-5 text-center text-lg-start">
+                        <li class="mb-3">
+                            <a href="#" class="footer__link">Преимущества</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="footer__link">Шаги продвижения</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="footer__link">Цена</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list m-0 col-12 col-lg-5 text-center text-lg-start">
+                        <li class="mb-3">
+                            <a href="#" class="footer__link">Форма обратной связи</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="footer__link">Создать профиль компании</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list m-0  col-12 col-lg-2 d-flex justify-content-center">
+                        <li class="mx-2">
+                            <a href="#" class="footer__link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="#" class="footer__link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="#" class="footer__link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row bottom__block">
+                <div class="footer__useful">
+                    <ul class="footer__list m-0 d-flex flex-column flex-lg-row text-center text-lg-start">
+                        <li class="m-0">
+                            <a href="#" class="footer__link">Правила использования</a>
+                        </li>
+                        <li class="m-0 mx-lg-5">
+                            <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@import "variables";
+
+@mixin nav-link () {
+  color: $typography-color;
+  text-decoration: none;
+  transition: all .3s ease;
+  &:hover {
+    color: lightcoral;
+  }
+}
+
+@mixin btn ($py, $px, $my:auto, $mx:auto) {
+  display: block;
+  margin: $my $mx;
+  color: white;
+  background: $secondary-color;
+  font-size: 20px;
+  font-weight: 600;
+  padding: $py $px;
+  border: none;
+  border-radius: 13px;
+  transition: all .3s ease;
+  &:hover {
+    background: lightcoral;
+  }
+}

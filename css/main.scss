@@ -1,0 +1,507 @@
+@import "variables";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'URW Geometric', sans-serif;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: $primary-color;
+}
+
+p {
+  color: $typography-color;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.note {
+  color: $note-color;
+}
+
+.h-line {
+  margin: 28px auto;
+  display: block;
+  width: 200px;
+  border: 1px solid $typography-color;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
+
+// Header
+header.header {
+  background: white;
+
+  nav.navbar {
+    padding: 40px 0;
+
+    a.navbar-brand {
+      flex: 0 0 142px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    #navbarTogglerDemo02 {
+      ul {
+        list-style: none;
+
+        li {
+          a.header__link {
+            @include nav-link;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Hero
+.hero {
+  .container {
+    .hero__body {
+      background-image: url("../assets/hero/background.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 665px;
+
+      h1.hero__title {
+        width: 620px;
+        padding-top: 70px;
+        margin-bottom: 20px;
+      }
+
+      p.hero__text {
+        width: 550px;
+        margin-bottom: 40px;
+      }
+
+      .hero__button {
+        button {
+          @include btn(16px, 24px, 0, 0);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    .container {
+      .hero__body {
+        background-image: none;
+
+        .hero__button {
+          button {
+            @include btn(16px, 24px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .hero {
+    .container {
+      .hero__body {
+        h1.hero__title {
+          width: 100%;
+        }
+
+        p.hero__text {
+          width: 100%;
+        }
+
+        .hero__button {
+          button {
+          }
+        }
+      }
+    }
+  }
+}
+
+// Benefits
+.benefits {
+  h2.benefits__title {
+    margin: 190px 0 120px;
+  }
+
+  .benefits__body {
+    margin-bottom: 130px;
+
+    .benefits__card {
+      padding: 0 3%;
+
+      .card__icon {
+        width: 60px;
+        margin-bottom: 30px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Info
+.info {
+  .info__body {
+    height: 700px;
+    background-image: url("../assets/info/background-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .info__img {
+      width: 50%;
+
+      img:first-child {
+        position: absolute;
+        left: 160px;
+        bottom: 70px;
+      }
+
+      img:last-child {
+        position: absolute;
+        left: 0;
+        bottom: 70px;
+      }
+    }
+
+
+    h2.info__title {
+      max-width: 570px;
+      margin-bottom: 170px;
+    }
+  }
+}
+
+// Steps
+.steps {
+  .container {
+    .steps__body {
+      h2.steps__title {
+        margin: 160px 0 120px;
+      }
+
+      ul.steps__list {
+        padding: 0;
+        list-style: none;
+
+        li.steps__item {
+
+          .item__number {
+            flex: 0 0 105px;
+            position: relative;
+
+            span {
+              font-size: 58px;
+              font-weight: 800;
+            }
+
+            span.vl {
+              margin-left: 24px;
+              height: 92px;
+              width: 1px;
+              border: 3px solid #F5F9FF;
+              display: block;
+            }
+          }
+        }
+      }
+
+      .steps__button {
+        margin: 120px 0 160px;
+
+        button#create-profile {
+          margin: 120px 0 160px;
+          @include btn(16px, 24px);
+        }
+      }
+    }
+  }
+}
+
+// Reputation
+.reputation {
+  background: #F5F9FF;
+
+  .container {
+    .reputation__top {
+      padding-top: 160px;
+
+      .reputation__text {
+        margin: 0 auto 120px;
+        color: $typography-color;
+      }
+    }
+
+    .reputation__bottom {
+      .reputation__body {
+        padding-bottom: 160px;
+
+        .col {
+          .reputation__card {
+            padding: 40px;
+
+            .card__icon {
+              width: 50px;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            h3.card__title {
+              margin: 20px 0 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Marketing
+.marketing {
+  .container {
+    .marketing__top {
+      h2.marketing__title {
+        padding-top: 160px;
+      }
+      p.marketing__text {
+        margin-bottom: 120px;
+      }
+    }
+
+    .marketing__body {
+      .marketing__block {
+        padding-bottom: 80px;
+          .marketing__img {
+            img {
+              width: 100%;
+            }
+          }
+        .marketing__description {
+          max-width: 430px;
+        }
+      }
+    }
+  }
+}
+
+// Package
+.package {
+  .container {
+    .package__body {
+      padding: 120px 0 160px;
+
+      .package__cards {
+        .col {
+          .card {
+            padding: 60px;
+
+            .rate {
+              p {
+                margin: 32px 0;
+                font-size: 24px;
+
+                span.note {
+                  font-size: 58px;
+                  font-weight: 800;
+                }
+
+                sup {
+                  font-weight: 600;
+                }
+              }
+            }
+
+            span.h-line {
+              max-width: 240px;
+              display: block;
+              border-color: $secondary-color;
+              margin: 0 auto 52px;
+            }
+
+            ul.card__list {
+              list-style: none;
+              padding: 0;
+              margin-bottom: 30px;
+
+              li.card__item.card__item--available {
+                color: $typography-color;
+
+                span {
+                  padding-right: 10px;
+                  color: $secondary-color;
+                }
+              }
+
+              li.card__item {
+                padding-bottom: 20px;
+                color: rgba(51, 51, 153, 0.2);
+
+                span {
+                  padding-right: 15px;
+                }
+              }
+            }
+
+            button.plug {
+              margin-top: 30px;
+              @include btn(16px, 24px);
+            }
+          }
+        }
+      }
+
+      p.package__text {
+        padding-top: 32px;
+
+        sup {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// Feedback
+.feedback {
+  padding: 160px 5%;
+
+  h2.feedback__title {
+    margin-bottom: 120px;
+  }
+
+  .feedback__body {
+    .feedback__img {
+      img {
+      }
+    }
+
+    .feedback__form {
+      form {
+        label {
+          color: $typography-color;
+
+          input {
+            max-width: 440px;
+            margin: 16px 0 40px;
+            padding: 20px 16px;
+            border: 1px solid rgba(51, 51, 153, 0.2);
+            border-radius: 12px;
+          }
+        }
+
+        button {
+          @include btn(16px, 24px);
+          margin: 24px 0 16px;
+        }
+
+        p.form__text {
+          br {
+          }
+
+          span.note {
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Footer
+footer.footer {
+  background: #F5F9FF;
+
+  .footer__body {
+    .row.top__block {
+      padding: 150px 0 115px;
+
+      .footer__logo {
+        img {
+          width: 212px;
+        }
+      }
+
+      nav.footer__nav {
+        ul.footer__list {
+          list-style: none;
+          padding: 0;
+
+          li {
+            a.footer__link {
+              @include nav-link;
+
+              i {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .row.bottom__block {
+      padding-bottom: 60px;
+
+      .footer__useful {
+        ul.footer__list {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-right: 60px;
+
+            a.footer__link {
+              @include nav-link;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

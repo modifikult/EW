@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "URW Geometric", sans-serif;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #000099;
+}
+
+p {
+  color: #333399;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.note {
+  color: #00CC99;
+}
+
+.h-line {
+  margin: 28px auto;
+  display: block;
+  width: 200px;
+  border: 1px solid #333399;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+header.header {
+  background: white;
+}
+header.header nav.navbar {
+  padding: 40px 0;
+}
+header.header nav.navbar a.navbar-brand {
+  flex: 0 0 142px;
+}
+header.header nav.navbar a.navbar-brand img {
+  width: 100%;
+}
+header.header nav.navbar #navbarTogglerDemo02 ul {
+  list-style: none;
+}
+header.header nav.navbar #navbarTogglerDemo02 ul li a.header__link {
+  color: #333399;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+header.header nav.navbar #navbarTogglerDemo02 ul li a.header__link:hover {
+  color: lightcoral;
+}
+
+.hero .container .hero__body {
+  background-image: url("../assets/hero/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 665px;
+}
+.hero .container .hero__body h1.hero__title {
+  width: 620px;
+  padding-top: 70px;
+  margin-bottom: 20px;
+}
+.hero .container .hero__body p.hero__text {
+  width: 550px;
+  margin-bottom: 40px;
+}
+.hero .container .hero__body .hero__button button {
+  display: block;
+  margin: 0 0;
+  color: white;
+  background: #00CC99;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 13px;
+  transition: all 0.3s ease;
+}
+.hero .container .hero__body .hero__button button:hover {
+  background: lightcoral;
+}
+
+@media screen and (max-width: 992px) {
+  .hero .container .hero__body {
+    background-image: none;
+  }
+  .hero .container .hero__body .hero__button button {
+    display: block;
+    margin: auto auto;
+    color: white;
+    background: #00CC99;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 13px;
+    transition: all 0.3s ease;
+  }
+  .hero .container .hero__body .hero__button button:hover {
+    background: lightcoral;
+  }
+}
+@media screen and (max-width: 772px) {
+  .hero .container .hero__body h1.hero__title {
+    width: 100%;
+  }
+  .hero .container .hero__body p.hero__text {
+    width: 100%;
+  }
+}
+.benefits h2.benefits__title {
+  margin: 190px 0 120px;
+}
+.benefits .benefits__body {
+  margin-bottom: 130px;
+}
+.benefits .benefits__body .benefits__card {
+  padding: 0 3%;
+}
+.benefits .benefits__body .benefits__card .card__icon {
+  width: 60px;
+  margin-bottom: 30px;
+}
+.benefits .benefits__body .benefits__card .card__icon img {
+  width: 100%;
+}
+
+.info .info__body {
+  height: 700px;
+  background-image: url("../assets/info/background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.info .info__body .info__img {
+  width: 50%;
+}
+.info .info__body .info__img img:first-child {
+  position: absolute;
+  left: 160px;
+  bottom: 70px;
+}
+.info .info__body .info__img img:last-child {
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+}
+.info .info__body h2.info__title {
+  max-width: 570px;
+  margin-bottom: 170px;
+}
+
+.steps .container .steps__body h2.steps__title {
+  margin: 160px 0 120px;
+}
+.steps .container .steps__body ul.steps__list {
+  padding: 0;
+  list-style: none;
+}
+.steps .container .steps__body ul.steps__list li.steps__item .item__number {
+  flex: 0 0 105px;
+  position: relative;
+}
+.steps .container .steps__body ul.steps__list li.steps__item .item__number span {
+  font-size: 58px;
+  font-weight: 800;
+}
+.steps .container .steps__body ul.steps__list li.steps__item .item__number span.vl {
+  margin-left: 24px;
+  height: 92px;
+  width: 1px;
+  border: 3px solid #F5F9FF;
+  display: block;
+}
+.steps .container .steps__body .steps__button {
+  margin: 120px 0 160px;
+}
+.steps .container .steps__body .steps__button button#create-profile {
+  margin: 120px 0 160px;
+  display: block;
+  margin: auto auto;
+  color: white;
+  background: #00CC99;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 13px;
+  transition: all 0.3s ease;
+}
+.steps .container .steps__body .steps__button button#create-profile:hover {
+  background: lightcoral;
+}
+
+.reputation {
+  background: #F5F9FF;
+}
+.reputation .container .reputation__top {
+  padding-top: 160px;
+}
+.reputation .container .reputation__top .reputation__text {
+  margin: 0 auto 120px;
+  color: #333399;
+}
+.reputation .container .reputation__bottom .reputation__body {
+  padding-bottom: 160px;
+}
+.reputation .container .reputation__bottom .reputation__body .col .reputation__card {
+  padding: 40px;
+}
+.reputation .container .reputation__bottom .reputation__body .col .reputation__card .card__icon {
+  width: 50px;
+}
+.reputation .container .reputation__bottom .reputation__body .col .reputation__card .card__icon img {
+  width: 100%;
+}
+.reputation .container .reputation__bottom .reputation__body .col .reputation__card h3.card__title {
+  margin: 20px 0 8px;
+}
+
+.marketing .container .marketing__top h2.marketing__title {
+  padding-top: 160px;
+}
+.marketing .container .marketing__top p.marketing__text {
+  margin-bottom: 120px;
+}
+.marketing .container .marketing__body .marketing__block {
+  padding-bottom: 80px;
+}
+.marketing .container .marketing__body .marketing__block .marketing__img img {
+  width: 100%;
+}
+.marketing .container .marketing__body .marketing__block .marketing__description {
+  max-width: 430px;
+}
+
+.package .container .package__body {
+  padding: 120px 0 160px;
+}
+.package .container .package__body .package__cards .col .card {
+  padding: 60px;
+}
+.package .container .package__body .package__cards .col .card .rate p {
+  margin: 32px 0;
+  font-size: 24px;
+}
+.package .container .package__body .package__cards .col .card .rate p span.note {
+  font-size: 58px;
+  font-weight: 800;
+}
+.package .container .package__body .package__cards .col .card .rate p sup {
+  font-weight: 600;
+}
+.package .container .package__body .package__cards .col .card span.h-line {
+  max-width: 240px;
+  display: block;
+  border-color: #00CC99;
+  margin: 0 auto 52px;
+}
+.package .container .package__body .package__cards .col .card ul.card__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.package .container .package__body .package__cards .col .card ul.card__list li.card__item.card__item--available {
+  color: #333399;
+}
+.package .container .package__body .package__cards .col .card ul.card__list li.card__item.card__item--available span {
+  padding-right: 10px;
+  color: #00CC99;
+}
+.package .container .package__body .package__cards .col .card ul.card__list li.card__item {
+  padding-bottom: 20px;
+  color: rgba(51, 51, 153, 0.2);
+}
+.package .container .package__body .package__cards .col .card ul.card__list li.card__item span {
+  padding-right: 15px;
+}
+.package .container .package__body .package__cards .col .card button.plug {
+  margin-top: 30px;
+  display: block;
+  margin: auto auto;
+  color: white;
+  background: #00CC99;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 13px;
+  transition: all 0.3s ease;
+}
+.package .container .package__body .package__cards .col .card button.plug:hover {
+  background: lightcoral;
+}
+.package .container .package__body p.package__text {
+  padding-top: 32px;
+}
+.package .container .package__body p.package__text sup {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.feedback {
+  padding: 160px 5%;
+}
+.feedback h2.feedback__title {
+  margin-bottom: 120px;
+}
+.feedback .feedback__body .feedback__form form label {
+  color: #333399;
+}
+.feedback .feedback__body .feedback__form form label input {
+  max-width: 440px;
+  margin: 16px 0 40px;
+  padding: 20px 16px;
+  border: 1px solid rgba(51, 51, 153, 0.2);
+  border-radius: 12px;
+}
+.feedback .feedback__body .feedback__form form button {
+  display: block;
+  margin: auto auto;
+  color: white;
+  background: #00CC99;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 13px;
+  transition: all 0.3s ease;
+  margin: 24px 0 16px;
+}
+.feedback .feedback__body .feedback__form form button:hover {
+  background: lightcoral;
+}
+footer.footer {
+  background: #F5F9FF;
+}
+footer.footer .footer__body .row.top__block {
+  padding: 150px 0 115px;
+}
+footer.footer .footer__body .row.top__block .footer__logo img {
+  width: 212px;
+}
+footer.footer .footer__body .row.top__block nav.footer__nav ul.footer__list {
+  list-style: none;
+  padding: 0;
+}
+footer.footer .footer__body .row.top__block nav.footer__nav ul.footer__list li a.footer__link {
+  color: #333399;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+footer.footer .footer__body .row.top__block nav.footer__nav ul.footer__list li a.footer__link:hover {
+  color: lightcoral;
+}
+footer.footer .footer__body .row.top__block nav.footer__nav ul.footer__list li a.footer__link i {
+  font-size: 20px;
+}
+footer.footer .footer__body .row.bottom__block {
+  padding-bottom: 60px;
+}
+footer.footer .footer__body .row.bottom__block .footer__useful ul.footer__list {
+  list-style: none;
+  padding: 0;
+}
+footer.footer .footer__body .row.bottom__block .footer__useful ul.footer__list li {
+  margin-right: 60px;
+}
+footer.footer .footer__body .row.bottom__block .footer__useful ul.footer__list li a.footer__link {
+  color: #333399;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+footer.footer .footer__body .row.bottom__block .footer__useful ul.footer__list li a.footer__link:hover {
+  color: lightcoral;
+}
+
+/*# sourceMappingURL=main.css.map */
